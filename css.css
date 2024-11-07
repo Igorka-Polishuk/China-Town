@@ -1,0 +1,125 @@
+@font-face {
+    font-family: "NinjaStrike";
+    src: url("assets/fonts/NinjaStrike.otf");
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    font-family: "NinjaStrike";
+} 
+
+body {
+    min-height: 100vh;
+    background-color: #9F0102;
+}
+
+header {
+    text-align: center;
+    font-size: 3rem;
+}
+
+img.lantern {
+    width: 20%;
+    position: fixed;
+    top: 10px;
+
+    animation: updown 3s ease-in-out infinite;
+}
+img.lantern.lan_right {
+    right: -1rem;
+}
+img.lantern.lan_left {
+    left: 0;
+}
+
+@keyframes updown {
+    0% {    
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-1rem);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.order h2 {
+    text-align: center;
+    font-size: 3rem;
+}
+
+#order-form {
+    margin: 0 auto;
+    width: 18rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1rem 0 2rem;
+    font-size: 2rem;
+}
+
+#order-form label {
+    font-weight: bold;
+    font-family: initial;
+}
+
+#order-form input {
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 1rem;
+    outline: none;
+    color: initial;
+    font-family: initial;
+    text-shadow: initial;
+    font-size: 1.2rem;
+    background-color: navajowhite;
+    margin: 0.5rem -0.2rem;
+    width: 100%;
+}
+
+#submit {
+    align-self: center;
+    cursor: pointer;
+    margin-top: 1rem;
+    padding: 1rem 2.5rem;
+    transition-duration: 0.5s;
+}
+#submit:hover {
+    box-shadow: 0 0 1rem black;
+    transform: scale(1.1);
+}
+
+#order-table {
+    margin-bottom: 2rem;
+    padding: 10px;
+    width: 100%;
+}
+
+#order-table th:first-child {
+    border-top-left-radius: 1rem;
+}
+#order-table th:last-child {
+    border-bottom-right-radius: 1rem;
+}
+
+#order-table th {
+    background-color: #068b76;
+    font-family: initial;
+    font-weight: bold;
+    padding: 0.6rem;
+    font-size: 1.5rem;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+#order-table td {
+    border: 3px solid green;
+    font-family: initial;
+    font-weight: bold;
+    padding: 0.5rem;
+    text-align: center;
+    color: white;
+}

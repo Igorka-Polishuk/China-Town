@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css.css">
+    <title>China Town</title>
+</head>
+<body>
+    <header>
+        <h1>China Town</h1>
+        <img class="lantern lan_left" src="assets/img/lantern.svg" alt="">
+        <img class="lantern lan_right" src="assets/img/lantern.svg" alt="">
+    </header>
+    <section class="order">
+        <h2>Order</h2>
+        <form id="order-form" action="#">
+            <label for="dish">Dish: </label> <input type="text" id="dish" placeholder="FRIED RICE">
+            <label for="time">Time: </label> <input type="time" id="time">
+            <label for="adress">Adress: </label> <input type="ad" id="adress" placeholder="Frankivska 666">
+            <label for="telephone">telephone: </label> <input type="tel" id="tel" placeholder="+43208432">
+            <input type="submit" id="submit" value="Order">
+        </form>
+    </section>
+    <section>
+        <table id="order-table">
+            <tr>
+                <th>Dish</th>
+                <th>Time</th>
+                <th>Adress</th>
+                <th>telephone</th>
+            </tr>
+
+        </table>
+    </section>
+
+    <script src="js.js"></script>
+</body>
+</html>
